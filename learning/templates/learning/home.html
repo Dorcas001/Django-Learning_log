@@ -1,0 +1,41 @@
+{% extends 'learning/base.html' %}
+{% load static %}
+{% block content %}
+<div class="banner">
+    <div class="content">
+        <h1>Education for all</h1>
+        <p>“Education without application is just entertainment.”—Tim Sanders.</p>
+        <div>
+            <a href="{% url 'topic' %}" class="topic-btn">Topic</a>
+            <a href="#" class="topic-btn">About</a>
+            <!-- <button type="button"><span></span>About</button> -->
+    
+        </div>
+    </div>
+    
+</div>
+<section class="books">
+    <h1>Sample Books</h1>
+    <p>Owning a page is crucial for the supreme goals you want to reach, and these tools are the ideal way to attain them.</p>
+    <div class="row">
+        <div class="books-col">
+            <img src="{% static 'img/py.jpg' %}" alt="">
+            <div class="layer">
+            </div>
+        </div>
+        <div class="books-col">
+            <img src="{% static 'img/css.jpg' %}" alt="">
+            <div class="layer">
+            </div>
+        </div>
+        <div class="books-col">
+            <img src="{% static 'img/dj.jpg' %}" alt="">
+            <div class="layer">
+            </div>
+        </div>
+        
+        
+    </div>
+
+</section>
+{% endblock content %}
